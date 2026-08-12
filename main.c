@@ -1,17 +1,25 @@
-//Q1: Write a program to input two numbers and display their sum.
+// Write a program to input two numbers and display their sum, difference, product, and quotient;
 
 
-#include<stdio.h>
+
+#include <stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
-    int a, b, sum;
-     
-    printf("enter the first number: ");
-    scanf("%d", &a);
-    printf("enter thr second number:");
-    scanf("%d", &b);
-    sum = a+b;
-    printf("The sum of %d and %d is %d\n",a,b,sum);
-    //return0;
+    float a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%f %f", &a, &b);
+
+    printf("Sum = %.2f\n", a + b);
+    printf("Difference = %.2f\n", a - b);
+    printf("Product = %.2f\n", a * b);
+
+    if (b != 0)
+        printf("Quotient = %.2f\n", a / b);
+    else
+        printf("Quotient is not possible (division by zero)\n");
+
+    //return 0;
 }
