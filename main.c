@@ -1,25 +1,19 @@
-// Write a program to input two numbers and display their sum, difference, product, and quotient;
-
-
-
-#include <stdio.h>
+//Q3: Write a program to calculate the area and perimeter of a rectangle given its length and breadth
 #include <stdio.h>
 
 int main(void)
 {
-    float a, b;
-
-    printf("Enter two numbers: ");
-    scanf("%f %f", &a, &b);
-
-    printf("Sum = %.2f\n", a + b);
-    printf("Difference = %.2f\n", a - b);
-    printf("Product = %.2f\n", a * b);
-
-    if (b != 0)
-        printf("Quotient = %.2f\n", a / b);
-    else
-        printf("Quotient is not possible (division by zero)\n");
-
-    //return 0;
+    float length, breadth, area, perimeter;
+    
+    printf("Enter length: ");
+    scanf("%f", &length);
+    
+    printf("Enter breadth: ");
+    scanf("%f", &breadth);
+    
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
+    
+    printf("Area = %.2f\n", area);
+    printf("Perimeter = %.2f\n", perimeter);
 }
